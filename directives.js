@@ -46,4 +46,4 @@ angular.module('faces')
         }, 1000);
       }
     }
-  }])
+  }]);

@@ -1,3 +1,4 @@
 bower_components/
 *.sublime-*
 desktop.ini
+.dropbox
