@@ -1,0 +1,42 @@
+body {
+  width: 300px;
+}
+
+h1 {
+  background: linear-gradient(to bottom, #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 0px 5px #000;
+}
+
+.faces {
+  list-style-type: none;
+}
+
+.face {
+  display: inline-block;
+  padding: 10px;
+}
+
+.face:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.notif {
+  background: #ccc;
+  padding: 10px 15px;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 150px;
+  height: 20px;
+  margin: auto;
+}

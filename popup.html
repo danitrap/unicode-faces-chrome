@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="faces">
+<head>
+  <meta charset="UTF-8">
+  <title>Unicode Faces</title>
+  <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="HomeCtrl">
+  <h1>Unicode Faces</h1>
+
+  <ul class="list">
+    <li class="face" ng-repeat="face in faces" copiable>{{ face }}</li>
+  </ul>
+
+  <script src="bower_components/angularjs/angular.min.js"></script>
+  <script src="app.js"></script>
+  <script src="directives.js"></script>
+  <script src="HomeCtrl.js"></script>
+
+</body>
+</html>
