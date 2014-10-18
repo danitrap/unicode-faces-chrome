@@ -1,25 +1,14 @@
 angular.module('faces')
-  .directive('copiable', ['$window', '$document', '$compile', function ($window, $document, $compile) {
+  .directive('copiable', ['$window', '$compile', 'Browser', function ($window, $compile, Browser) {
     return {
       link: function (scope, element, attrs) {
-
-        var selectText = function() {
-          var doc       = $document[0],
-              elem      = this,
-              selection = $window.getSelection(),
-              range     = doc.createRange();
-
-          range.selectNodeContents(elem);
-          selection.removeAllRanges();
-          selection.addRange(range);
-        };
 
         element.on('click', function () {
           var notif;
 
-          selectText.apply(this);
-          $document[0].execCommand("Copy");
-          $window.getSelection().removeAllRanges();
+          Browser.selectText(this);
+          Browser.copy();
+          Browser.deselectAll();
           notif = angular.element('<notify>Copied to clipboard.</notify>');
           element.append(notif);
           $compile(notif)(scope);
