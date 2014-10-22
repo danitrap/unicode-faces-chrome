@@ -28,6 +28,7 @@ h1 {
 }
 
 .notif {
+  text-align: center;
   background: #ccc;
   padding: 10px 15px;
   border-radius: 20px;
@@ -39,4 +40,14 @@ h1 {
   width: 150px;
   height: 20px;
   margin: auto;
+  opacity: 1;
+  -webkit-transition: all 1s ease-out;
+     -moz-transition: all 1s ease-out;
+      -ms-transition: all 1s ease-out;
+       -o-transition: all 1s ease-out;
+          transition: all 1s ease-out;
+}
+
+.notif.fade-out {
+  opacity: 0;
 }

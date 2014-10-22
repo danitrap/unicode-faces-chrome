@@ -16,7 +16,7 @@ angular.module('faces')
       }
     };
   }])
-  .directive('notify', ['$timeout', '$interval', function ($timeout, $interval) {
+  .directive('notify', ['$timeout', function ($timeout) {
     return {
       restrict: 'E',
       transclude: true,
@@ -24,14 +24,7 @@ angular.module('faces')
       link: function (scope, element, attrs) {
         var opacity = 1;
         $timeout(function () {
-          var timer = $interval(function () {
-            if (opacity <= 0.1) {
-              $interval.cancel(timer);
-              element.remove();
-            }
-            element.css('opacity', opacity);
-            opacity -= opacity * 0.1;
-          }, 50);
+          element.children().addClass('fade-out');
         }, 1000);
       }
     }
