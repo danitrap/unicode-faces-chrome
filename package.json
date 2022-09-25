@@ -1,0 +1,23 @@
+{
+  "name": "unicode-faces-chrome",
+  "version": "1.0.0",
+  "description": "This extension allows you to copy cool unicode faces.",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danitrap/unicode-faces-chrome.git"
+  },
+  "author": "Daniele Trapani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danitrap/unicode-faces-chrome/issues"
+  },
+  "homepage": "https://github.com/danitrap/unicode-faces-chrome#readme",
+  "dependencies": {
+    "angular": "^1.8.3",
+    "normalize.css": "^8.0.1"
+  }
+}

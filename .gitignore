@@ -1,4 +1,4 @@
-bower_components/
 *.sublime-*
 desktop.ini
 .dropbox
+node_modules
